@@ -1,2 +1,2 @@
 # project-manager
-Simple porject management web app
+Simple task management web app

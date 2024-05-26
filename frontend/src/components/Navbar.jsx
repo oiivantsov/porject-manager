@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <h1 className={styles.title}>React Project Manager</h1>
+        <h1 className={styles.title}>Task Manager</h1>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <Link to="/" className={styles.navLink}>Home</Link>
