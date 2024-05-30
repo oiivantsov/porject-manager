@@ -22,6 +22,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/projects', projectRoutes);
+app.use('/api/tasks', taskRoutes);
 
 // Server Run
 app.listen(PORT, () => {

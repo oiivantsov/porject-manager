@@ -12,7 +12,6 @@ const Login = () => {
     try {
       const response = await axios.post('http://localhost:5000/api/login', { username, password });
       if (response.data.success) {
-        // При успешной аутентификации перенаправляем на главную страницу
         navigate('/');
       } else {
         alert('Invalid credentials');
