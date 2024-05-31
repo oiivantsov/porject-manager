@@ -27,7 +27,6 @@ function ProjectPage() {
       });
     })
     .catch(error => {
-      // Если произошла ошибка при отправке запроса, выводим её в консоль
       console.error('Error adding note:', error);
     });
   }
