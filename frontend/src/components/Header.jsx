@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
   return (
     <header>
-      <h1>Task Manager</h1>
+      <h1>Project Manager</h1>
     </header>
   );
 }
