@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const { dbURL, dbOptions } = require('./config/db');
 
-const projectRoutes = require('./routes/projects');
+const projectRoutes = require('./routes/projectRoutes');
+const taskRoutes = require('./routes/taskRoutes');
 
 
 const app = express();
