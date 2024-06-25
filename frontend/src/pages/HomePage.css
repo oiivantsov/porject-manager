@@ -1,53 +1,40 @@
 .home-page {
-    text-align: center;
-    background-color: #E9ECEF;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-top: 250px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-page-header {
+  margin-bottom: 30px;
+}
+
+.home-page-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.home-page-header p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.home-page-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-page-footer {
+  margin-top: auto;
+  color: #888;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 769px) {
+  .home-page {
+    padding-top: 200px;
   }
-  
-  .home-page-header {
-    margin-bottom: 20px;
-  }
-  
-  .home-page-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  
-  .home-page-header p {
-    font-size: 1.2em;
-    color: #666;
-  }
-  
-  .home-page-buttons {
-    margin: 20px 0;
-  }
-  
-  .register-button, .login-button {
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 0 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-  }
-  
-  .register-button {
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #ddd;
-  }
-  
-  .login-button {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .home-page-footer {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #888;
-  }
-  
+}

@@ -9,8 +9,8 @@ function HomePage() {
         <p>Collaborate and manage your tasks efficiently</p>
       </header>
       <div className="home-page-buttons">
-        <a class="register-button" href="/register" role="button">Register</a>
-        <a class="login-button" href="/login" role="button">Login</a>
+        <a className="btn btn-grey" href="/register" role="button">Register</a>
+        <a className="btn btn-blue" href="/login" role="button">Login</a>
       </div>
       <footer className="home-page-footer">
         <p>Created by Oleg</p>

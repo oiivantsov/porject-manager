@@ -1,17 +1,51 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  html {
-    font-family: "Montserrat", sans-serif;
-  }
-  body {
-    background-color: #E9ECEF;
-    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  
-    /* background: #eee;
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); */
-    padding: 0 16px;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: 300; */
+}
+
+body {
+  background-color: #E9ECEF;
+}
+
+.container {
+  height: 100vh; /* Добавлено */
+  margin: 0; /* Добавлено */
+  display: flex; /* Добавлено */
+  align-items: center; /* Добавлено */
+  justify-content: center; /* Добавлено */
+}
+
+.btn {
+  text-align: center;
+  width: 120px;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 0 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn-grey {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn-grey:hover {
+  background-color: #e4e2e2e1;
+}
+
+.btn-blue {
+  background-color: #00B0F0;
+  color: #fff;
+  border: 1px solid #ddd;
+}
+
+.btn-blue:hover {
+  background-color: #0fb3ff;
+}
