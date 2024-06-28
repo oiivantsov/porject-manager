@@ -179,3 +179,45 @@ body {
 .social-text {
   margin: auto;
 }
+
+
+/* DASHBOARD */
+
+.dashborad {
+  display: flex;
+}
+
+.dashborad-sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.dashborad-main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.dashborad-header {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.dashborad-table-container {
+  margin-bottom: 20px;
+}
+
+.dashborad table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashborad th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.dashborad th {
+  background-color: #f2f2f2;
+}

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import UserInput from '../components/UserInput';
-import SocialSignup from '../components/SocialSignup';
-import Footer from '../components/Footer';
+import UserInput from '../components/landing-login-register/UserInput';
+import SocialSignup from '../components/landing-login-register/SocialSignup';
+import Footer from '../components/landing-login-register/Footer';
 
 const Login = () => {
   const [username, setUsername] = useState('');

@@ -1,6 +1,6 @@
 import React from 'react';
-import LandingPageHeader from '../components/LandingPageHeader'
-import Footer from '../components/Footer'
+import LandingPageHeader from '../components/landing-login-register/LandingPageHeader'
+import Footer from '../components/landing-login-register/Footer'
 
 function HomePage() {
   return (
