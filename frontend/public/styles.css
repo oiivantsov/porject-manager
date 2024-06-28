@@ -10,14 +10,6 @@ body {
   background-color: #E9ECEF;
 }
 
-.container {
-  height: 100vh; /* Добавлено */
-  margin: 0; /* Добавлено */
-  display: flex; /* Добавлено */
-  align-items: center; /* Добавлено */
-  justify-content: center; /* Добавлено */
-}
-
 .btn {
   text-align: center;
   width: 120px;
@@ -48,4 +40,142 @@ body {
 
 .btn-blue:hover {
   background-color: #0fb3ff;
+}
+
+
+/* LANDING PAGE */
+
+.landing-page {
+  text-align: center;
+  padding-top: 250px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-page-header {
+  margin-bottom: 30px;
+}
+
+.landing-page-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.landing-page-header p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.landing-page-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.landing-page-footer {
+  margin-top: auto;
+  color: #888;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 769px) {
+  .landing-page {
+    padding-top: 200px;
+  }
+}
+
+
+/* LOGIN REGISTER */
+
+
+.login-register {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 250px;
+}
+
+.login-register-internal-form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 35%;
+  min-width: 350px;
+}
+
+.login-register-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-register-form-group label {
+  width: 100%;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+.login-register-form-group input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-sign {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.social-signup {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 35%;
+  min-width: 350px;
+}
+
+.btn-google, .btn-facebook {
+  align-items: center;
+  display: flex;
+  padding: 15px 20px;
+  margin: 0;
+  width: 48%;
+}
+
+.btn-google {
+  background-color: #de5246;
+  color: white;
+}
+
+.btn-google:hover {
+  background-color: #c34132;
+}
+
+.btn-facebook {
+  background-color: #0866FF;
+  color: white;
+}
+
+.btn-facebook:hover {
+  background-color: #2d4373;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+}
+
+.social-text {
+  margin: auto;
 }

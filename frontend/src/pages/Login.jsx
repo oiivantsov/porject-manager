@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './LoginRegister.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGoogle, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import UserInput from '../components/UserInput';
+import SocialSignup from '../components/SocialSignup';
+import Footer from '../components/Footer';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleLogin = async (e) => {
+  const handleLoginButton = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:5000/api/login', { username, password });
@@ -25,48 +25,25 @@ const Login = () => {
     }
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    if (name === 'username') setUsername(value);
+    if (name === 'password') setPassword(value);
+  };
+
   return (
-
     <div className="login-register">
-
-
-      {/* Makes POST request to /login route */}
-      <form className='login-register-internal-form' action="/login" method="POST">
-        <div className="login-register-form-group">
-          <label for="email">Email</label>
-          <input
-            className="form-control"
-            name="username"
-            type="email"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-        </div>
-        <div className="login-register-form-group">
-          <label for="password">Password</label>
-          <input
-            className="form-control"
-            name="password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <button type="submit" className="btn btn-blue btn-sign">Login</button>
-      </form>
-
-      <div className="social-signup">
-        {/* new style from bootstrap-social: btn-social btn-google */}
-        <a className="btn btn-google" href="/auth/google" role="button">
-          <FontAwesomeIcon className='social-icon' icon={faGoogle} />
-          <p className='social-text'>Sign In with Google</p>
-        </a>
-        <a className="btn btn-facebook" href="/auth/google" role="button">
-          <FontAwesomeIcon className='social-icon' icon={faFacebook} />
-          <p className='social-text'>Sign In with Facebook</p>
-        </a>
-      </div>
-
+      <UserInput
+        username={username}
+        password={password}
+        handleChange={handleChange}
+        handleSubmit={handleLoginButton}
+        isLogin={true}
+      />
+      <SocialSignup
+        isLogin={true}
+      />
+      <Footer />
     </div>
   );
 };

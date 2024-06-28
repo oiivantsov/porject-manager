@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer>
+    <footer className="landing-page-footer">
       <p>Copyright ⓒ {year}</p>
     </footer>
   );
